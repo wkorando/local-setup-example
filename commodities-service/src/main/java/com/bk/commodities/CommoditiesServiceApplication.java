@@ -1,4 +1,4 @@
-package com.bk.commodities.service;
+package com.bk.commodities;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
