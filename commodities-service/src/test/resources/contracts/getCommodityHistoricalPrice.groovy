@@ -5,10 +5,7 @@ import org.springframework.http.MediaType
 Contract.make {
     request {
         method 'GET'
-        url '/commodities/{id}/historicalPrice'
-		headers { 
-			header(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_JSON_UTF8_VALUE)
-		}
+        url '/commodities/1/historicalPrice'
     }
     response {
         status 200
@@ -17,35 +14,35 @@ Contract.make {
 	        		   "date" : "11/2017",
 	        		   "commodityId" : 1,
 	        		   "commodityName" : "CORN",
-				   "commodityPrice" : $(regex('[0-9]{1}.[0-9]{2}')),
+				   "commodityPrice" : $(regex('[0-9]{1}\\.[0-9]{2}')),
 				   "avaliableUnits" : $(regex('[0-9]{8}'))
 			   ],
 			   [
 	        		   "date" : "10/2017",
 	        		   "commodityId" : 1,
 	        		   "commodityName" : "CORN",
-				   "commodityPrice" : $(regex('[0-9]{1}.[0-9]{2}')),
+				   "commodityPrice" : $(regex('[0-9]{1}\\.[0-9]{2}')),
 				   "avaliableUnits" : $(regex('[0-9]{8}'))
 			   ],
 			   [
 	        		   "date" : "09/2017",
 	        		   "commodityId" : 1,
 	        		   "commodityName" : "CORN",
-				   "commodityPrice" : $(regex('[0-9]{1}.[0-9]{2}')),
+				   "commodityPrice" : $(regex('[0-9]{1}\\.[0-9]{2}')),
 				   "avaliableUnits" : $(regex('[0-9]{8}'))
 			   ],
 			   [
 	        		   "date" : "08/2017",
 	        		   "commodityId" : 1,
 	        		   "commodityName" : "CORN",
-				   "commodityPrice" : $(regex('[0-9]{1}.[0-9]{2}')),
+				   "commodityPrice" : $(regex('[0-9]{1}\\.[0-9]{2}')),
 				   "avaliableUnits" : $(regex('[0-9]{8}'))
 			   ],
 			   [
 	        		   "date" : "07/2017",
 	        		   "commodityId" : 1,
 	        		   "commodityName" : "CORN",
-				   "commodityPrice" : $(regex('[0-9]{1}.[0-9]{2}')),
+				   "commodityPrice" : $(regex('[0-9]{1}\\.[0-9]{2}')),
 				   "avaliableUnits" : $(regex('[0-9]{8}'))
 			   ]
 		])

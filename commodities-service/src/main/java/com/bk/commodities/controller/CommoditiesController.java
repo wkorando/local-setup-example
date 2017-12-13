@@ -4,13 +4,15 @@ import java.util.List;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.bk.commodities.model.Commodity;
 import com.bk.commodities.model.CommodityHistory;
 import com.bk.commodities.service.CommoditiesService;
 
-@RestController("/commodities")
+@RestController
+@RequestMapping("/commodities")
 public class CommoditiesController {
 	private CommoditiesService service;
 
@@ -23,8 +25,8 @@ public class CommoditiesController {
 		return service.getCommodities();
 	}
 
-	@GetMapping("/{commodityId}/historicalPrice")
-	public List<CommodityHistory> getHistoricalPrice(@PathVariable("commodityId") Long commodityId) {
+	@GetMapping("/{id}/historicalPrice")
+	public List<CommodityHistory> getHistoricalPrice(@PathVariable("id") Long commodityId) {
 		return service.getCommodityPriceHistory(commodityId);
 	}
 }
