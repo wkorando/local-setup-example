@@ -4,7 +4,7 @@ import org.springframework.cloud.contract.stubrunner.server.EnableStubRunnerServ
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
 
-@Profile("local")
+//@Profile("local")
 @Configuration
 @EnableStubRunnerServer
 public class LocalWireMockServerConfig {
