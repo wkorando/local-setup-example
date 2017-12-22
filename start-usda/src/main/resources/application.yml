@@ -1,0 +1,62 @@
+initializr:
+  java-versions:
+    - id: 1.8
+      default: true
+  languages:
+    - name: Java
+      id: java
+      default: true
+    - name: Kotlin
+      id: kotlin
+      default: false
+  packagings:
+    - name: Jar
+      id: jar
+      default: true
+  types:
+    - name: Maven Project
+      id: maven-project
+      description: Generate a Maven based project archive
+      tags:
+        build: maven
+        format: project
+      default: true
+      action: /starter.zip
+  project-types:
+    - name: Backend Service Project
+      id: service-project
+      default: true
+    - name: SPA Project
+      id: spa-project
+      default: false
+    - name: Batch Project
+      id: batch-project
+      default: false
+  dependencies:
+  - name: USDA Shared Libraries
+    content:
+      - name: USDA Shared library
+        id: acme
+        groupId: gov.usda.shared
+        artifactId: acme
+        description: Shared library for USDA stuff
+        weight: 1
+        links:
+            - rel: reference
+              href: http://docs.spring.io/spring-boot/docs/{bootVersion}/reference/htmlsingle/#boot-features-kafka
+            - rel: guide
+              href: http://docs.spring.io/spring-boot/docs/{bootVersion}/reference/htmlsingle/#boot-features-kafka
+  bootVersions:
+    - name : 1.5.9
+      id: 1.5.9.RELEASE
+      default: true
+  package-name:
+    value: gov.usda
+  artifact-id:
+    value: usda-
+  description:
+    value: Project Description
+  name:
+    value: USDA 
+  group-id:
+    value: gov.usda
