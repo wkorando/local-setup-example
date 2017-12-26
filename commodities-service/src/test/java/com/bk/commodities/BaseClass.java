@@ -1,11 +1,14 @@
 package com.bk.commodities;
 
+import static org.mockito.Matchers.any;
 import static org.mockito.Mockito.when;
 
 import java.util.Arrays;
 
 import org.junit.Before;
 import org.junit.runner.RunWith;
+import org.mockito.invocation.InvocationOnMock;
+import org.mockito.stubbing.Answer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
@@ -47,6 +50,14 @@ public class BaseClass {
 						new CommodityHistory("08/2017", 1, "CORN", 1.23, 32219239), //
 						new CommodityHistory("07/2017", 1, "CORN", 1.44, 32219239) //
 		));
+
+		when(commoditiesService.addCommodity(any(Commodity.class))).then(new Answer<Commodity>() {
+			public Commodity answer(InvocationOnMock invocation) {
+				Object[] args = invocation.getArguments();
+				Commodity newCommodity = (Commodity)args[0];
+				return new Commodity(7L, newCommodity.getCommodityName(), newCommodity.getCommodityPrice(), newCommodity.getAvailableUnits());
+			}
+		});
 	}
 
 }

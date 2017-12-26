@@ -9,4 +9,6 @@ public interface CommoditiesService {
 	public List<Commodity> getCommodities();
 	
 	public List<CommodityHistory> getCommodityPriceHistory(long id);
+
+	public Commodity addCommodity(Commodity commodity);
 }

@@ -6,15 +6,15 @@ public class CommodityHistory {
 	private int commodityId;
 	private String commodityName;
 	private double commodityPrice;
-	private long avaliableUnits;
+	private long availableUnits;
 
 	public CommodityHistory(String date, int commodityId, String commodityName, double commodityPrice,
-			long avaliableUnits) {
+			long availableUnits) {
 		this.date = date;
 		this.commodityId = commodityId;
 		this.commodityName = commodityName;
 		this.commodityPrice = commodityPrice;
-		this.avaliableUnits = avaliableUnits;
+		this.availableUnits = availableUnits;
 	}
 
 	public String getDate() {
@@ -33,8 +33,8 @@ public class CommodityHistory {
 		return commodityPrice;
 	}
 
-	public long getAvaliableUnits() {
-		return avaliableUnits;
+	public long getavailableUnits() {
+		return availableUnits;
 	}
 
 }

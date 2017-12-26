@@ -4,13 +4,16 @@ public class Commodity {
 	private long id;
 	private String commodityName;
 	private double commodityPrice;
-	private long avaliableUnits;
+	private long availableUnits;
 
-	public Commodity(long id, String commodityName, double commodityPrice, long avaliableUnits) {
+	public Commodity() {
+	}
+
+	public Commodity(long id, String commodityName, double commodityPrice, long availableUnits) {
 		this.id = id;
 		this.commodityName = commodityName;
 		this.commodityPrice = commodityPrice;
-		this.avaliableUnits = avaliableUnits;
+		this.availableUnits = availableUnits;
 	}
 
 	public long getId() {
@@ -25,8 +28,8 @@ public class Commodity {
 		return commodityPrice;
 	}
 
-	public long getAvaliableUnits() {
-		return avaliableUnits;
+	public long getAvailableUnits() {
+		return availableUnits;
 	}
 
 }

@@ -15,35 +15,35 @@ Contract.make {
 	        		   "commodityId" : fromRequest().path(1),
 	        		   "commodityName" : "CORN",
 				   "commodityPrice" : $(regex('[0-9]{1}\\.[0-9]{2}')),
-				   "avaliableUnits" : $(regex('[0-9]{8}'))
+				   "availableUnits" : $(regex('[0-9]{8}'))
 			   ],
 			   [
 	        		   "date" : "10/2017",
 	        		   "commodityId" : fromRequest().path(1),
 	        		   "commodityName" : "CORN",
 				   "commodityPrice" : $(regex('[0-9]{1}\\.[0-9]{2}')),
-				   "avaliableUnits" : $(regex('[0-9]{8}'))
+				   "availableUnits" : $(regex('[0-9]{8}'))
 			   ],
 			   [
 	        		   "date" : "09/2017",
 	        		   "commodityId" : 1,
 	        		   "commodityName" : "CORN",
 				   "commodityPrice" : $(regex('[0-9]{1}\\.[0-9]{2}')),
-				   "avaliableUnits" : $(regex('[0-9]{8}'))
+				   "availableUnits" : $(regex('[0-9]{8}'))
 			   ],
 			   [
 	        		   "date" : "08/2017",
 	        		   "commodityId" : fromRequest().path(1),
 	        		   "commodityName" : "CORN",
 				   "commodityPrice" : $(regex('[0-9]{1}\\.[0-9]{2}')),
-				   "avaliableUnits" : $(regex('[0-9]{8}'))
+				   "availableUnits" : $(regex('[0-9]{8}'))
 			   ],
 			   [
 	        		   "date" : "07/2017",
 	        		   "commodityId" : fromRequest().path(1),
 	        		   "commodityName" : "CORN",
 				   "commodityPrice" : $(regex('[0-9]{1}\\.[0-9]{2}')),
-				   "avaliableUnits" : $(regex('[0-9]{8}'))
+				   "availableUnits" : $(regex('[0-9]{8}'))
 			   ]
 		])
 		headers { 

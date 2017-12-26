@@ -4,7 +4,7 @@ public class Commodity {
 	private long id;
 	private String commodityName;
 	private double commodityPrice;
-	private long avaliableUnits;
+	private long availableUnits;
 
 
 	public void setId(long id) {
@@ -19,8 +19,8 @@ public class Commodity {
 		this.commodityPrice = commodityPrice;
 	}
 
-	public void setAvaliableUnits(long avaliableUnits) {
-		this.avaliableUnits = avaliableUnits;
+	public void setavailableUnits(long availableUnits) {
+		this.availableUnits = availableUnits;
 	}
 
 	public long getId() {
@@ -35,14 +35,14 @@ public class Commodity {
 		return commodityPrice;
 	}
 
-	public long getAvaliableUnits() {
-		return avaliableUnits;
+	public long getavailableUnits() {
+		return availableUnits;
 	}
 
 	@Override
 	public String toString() {
 		return "Commodity [id=" + id + ", commodityName=" + commodityName + ", commodityPrice=" + commodityPrice
-				+ ", avaliableUnits=" + avaliableUnits + "]";
+				+ ", availableUnits=" + availableUnits + "]";
 	}
 
 }

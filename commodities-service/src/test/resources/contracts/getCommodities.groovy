@@ -14,37 +14,37 @@ Contract.make {
 	        		   "id" : 1,
 	        		   "commodityName" : "CORN",
 				   "commodityPrice" : $(regex('[0-9]{1}\\.[0-9]{2}')),
-				   "avaliableUnits" : $(regex('[0-9]{8}'))
+				   "availableUnits" : $(regex('[0-9]{8}'))
 			   ],
 			   [
 	        		   "id" : 2,
 	        		   "commodityName" : "WHEAT",
 				   "commodityPrice" : $(regex('[0-9]{1}\\.[0-9]{2}')),
-				   "avaliableUnits" : $(regex('[0-9]{8}'))
+				   "availableUnits" : $(regex('[0-9]{8}'))
 			   ],
 			   [
 	        		   "id" : 3,
 	        		   "commodityName" : "BARLEY",
 				   "commodityPrice" : $(regex('[0-9]{1}\\.[0-9]{2}')),
-				   "avaliableUnits" : $(regex('[0-9]{8}'))
+				   "availableUnits" : $(regex('[0-9]{8}'))
 			   ],
 			   [
 	        		   "id" : 4,
 	        		   "commodityName" : "SOYBEAN",
 				   "commodityPrice" : $(regex('[0-9]{1}\\.[0-9]{2}')),
-				   "avaliableUnits" : $(regex('[0-9]{8}'))
+				   "availableUnits" : $(regex('[0-9]{8}'))
 			   ],
 			   [
 	        		   "id" : 5,
 	        		   "commodityName" : "ORANGE",
 				   "commodityPrice" : $(regex('[0-9]{1}\\.[0-9]{2}')),
-				   "avaliableUnits" : $(regex('[0-9]{8}'))
+				   "availableUnits" : $(regex('[0-9]{8}'))
 			   ],
 			   [
 	        		   "id" : 6,
 	        		   "commodityName" : "APPLE",
 				   "commodityPrice" : $(regex('[0-9]{1}\\.[0-9]{2}')),
-				   "avaliableUnits" : $(regex('[0-9]{8}'))
+				   "availableUnits" : $(regex('[0-9]{8}'))
 			   ]
 		])
 		headers { 
